@@ -1,63 +1,67 @@
-.transparant-nav {
-  background: rgba(0, 81, 255, 0.603); 
-  backdrop-filter: blur(5px); 
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: background 0.3s ease-in-out;  
+.navbar {
+  background-color: rgba(0, 81, 255, 0.603);
+  backdrop-filter: blur(5px);
+  transition: background 0.3s ease-in-out;
 }
 
-.transparant-nav .navbar {
-  padding: 10px 0;
-}
 
-.transparant-nav .navbar-brand {
-  color: #ffffff;
-  font-size: 24px;
+.navbar-brand {
+  font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
 }
 
-.transparant-nav .navbar-nav {
-    display: flex;
-    align-items: center;
+
+.navbar-nav {
+  margin-top: 10px;
 }
 
-.transparant-nav .nav-item {
-    margin-right: 20px;
+
+.nav-item {
+  margin: 0 15px;
 }
 
-.transparant-nav .nav-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+
+.nav-link {
+  font-size: 16px;
 }
-.transparant-nav.nav-scrolled {
-  background: rgba(0, 0, 0, 0.9); 
+
+#beranda {
+  padding: 40px 0; 
+}
+
+#beranda h2 {
+  font-size: 28px; 
+  color: #333;
+  text-transform: uppercase; 
+}
+
+#beranda p {
+  font-size: 18px; 
+  color: #555;
+  margin: 20px 0; 
+}
+
+#beranda.container {
+  max-width: 100%; 
 }
 
 #profil {
   background-color: #f8f9fa;
-  padding: 80px 0;
+  padding: 40px 0; 
 }
 
 #profil h2 {
-  font-size: 36px;
+  font-size: 28px;
   color: #333;
-  text-transform: uppercase;
 }
 
 #profil p {
-  font-size: 20px;
+  font-size: 18px; 
   color: #555;
   margin: 20px 0;
 }
 
 #profil.container {
-  max-width: 1000px;
-}
-
-#profil img {
   max-width: 100%;
 }
 
@@ -118,16 +122,22 @@
   .owl-carousel {
     display: flex;
     flex-wrap: nowrap;
-}
-
-.owl-carousel .item {
-    width: 100%;
-    padding: 10px;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    scroll-padding: 0 10px; 
+  }
+  
+  .owl-carousel .item {
+    width: 80%;
     margin-right: 20px;
-    transition: transform 0.3s ease-in-out;
-}
+  }
+  
+ 
+  .owl-carousel .item:last-child {
+    margin-right: 0;
+  }
 
-/* Gaya tombol navigasi */
+
 .owl-nav {
     position: absolute;
     top: 50%;
@@ -163,26 +173,25 @@
 
 
   #kontak {
-    background-color: #f8f9fa00;
-    padding: 80px 0;
-  }
-  
-  #kontak h2 {
-    font-size: 36px;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-  
-  #kontak p {
-    font-size: 20px;
-    color: #ffffff;
-    margin: 10px ;
-  }
-  
-  #kontak.container {
-    max-width: 1000px;
-  }
-  
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+#kontak h2 {
+  font-size: 28px; 
+  color: #333;
+}
+
+#kontak p {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+#kontak.container {
+  max-width: 100%;
+}
+
   #kontak img {
     max-width: 100%;
   }
