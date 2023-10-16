@@ -1,0 +1,231 @@
+.transparant-nav {
+  background: rgba(0, 81, 255, 0.603); 
+  backdrop-filter: blur(5px); 
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background 0.3s ease-in-out;  
+}
+
+.transparant-nav .navbar {
+  padding: 10px 0;
+}
+
+.transparant-nav .navbar-brand {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.transparant-nav .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.transparant-nav .nav-item {
+    margin-right: 20px;
+}
+
+.transparant-nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.transparant-nav.nav-scrolled {
+  background: rgba(0, 0, 0, 0.9); 
+}
+
+#profil {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+#profil h2 {
+  font-size: 36px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+#profil p {
+  font-size: 20px;
+  color: #555;
+  margin: 20px 0;
+}
+
+#profil.container {
+  max-width: 1000px;
+}
+
+#profil img {
+  max-width: 100%;
+}
+
+#kamar {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  
+  .card {
+    border: none;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+
+  .btn-primary {
+    background-color: #007BFF;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0300b3;
+  }
+  
+ 
+  .carousel-control-prev, .carousel-control-next {
+    width: 90%;
+    background: none;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: #3700ff;
+  }
+  .owl-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.owl-carousel .item {
+    width: 100%;
+    padding: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Gaya tombol navigasi */
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.owl-prev:hover, .owl-next:hover {
+    background: #0056b3;
+}
+
+.owl-prev {
+    left: 10px;
+}
+
+.owl-next {
+    right: 10px;
+}
+
+
+  #kontak {
+    background-color: #f8f9fa00;
+    padding: 80px 0;
+  }
+  
+  #kontak h2 {
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  #kontak p {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px ;
+  }
+  
+  #kontak.container {
+    max-width: 1000px;
+  }
+  
+  #kontak img {
+    max-width: 100%;
+  }
+
+
+  footer {
+    background-color: #f8f9fa; 
+    color: #343a40; 
+    text-align: center; 
+    padding: 20px 0; 
+  }
+  
+  .social-icons {
+    font-size: 24px;
+  }
+  
+  .social-icons a {
+    color: #343a40; 
+    text-decoration: none; 
+    margin: 0 10px; 
+  }
+  
+  .social-icons a:hover {
+    color: #484e53; 
+  }
+  
+  .nav {
+    list-style: none; 
+  }
+  
+  .nav-item {
+    display: inline; 
+    margin: 0 10px; 
+  }
+  
+  .nav-item a {
+    color: #343a40; 
+    text-decoration: none; 
+  }
+  
+  .nav-item a:hover {
+    color: #007bff; 
+  }
+  
+
+  
