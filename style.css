@@ -1,67 +1,79 @@
-.navbar {
-  background-color: rgba(0, 81, 255, 0.603);
-  backdrop-filter: blur(5px);
-  transition: background 0.3s ease-in-out;
+.transparant-nav {
+  background: rgba(0, 81, 255, 0.603); 
+  backdrop-filter: blur(5px); 
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background 0.3s ease-in-out;  
 }
 
+.transparant-nav .navbar {
+  padding: 10px 0;
+}
 
-.navbar-brand {
-  font-size: 20px;
+.transparant-nav .navbar-brand {
+  color: #ffffff;
+  font-size: 24px;
   font-weight: bold;
+  text-decoration: none;
 }
 
-
-.navbar-nav {
-  margin-top: 10px;
+.transparant-nav .navbar-nav {
+    display: flex;
+    align-items: center;
 }
 
-
-.nav-item {
-  margin: 0 15px;
+.transparant-nav .nav-item {
+    margin-right: 20px;
 }
 
-
-.nav-link {
-  font-size: 16px;
+.transparant-nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.transparant-nav.nav-scrolled {
+  background: rgba(0, 0, 0, 0.9); 
 }
 
 #beranda {
-  padding: 40px 0; 
+  background-color: rgba(106, 107, 107, 0.404); 
+  color: #fff; 
+  padding: 60px 0; 
 }
 
 #beranda h2 {
-  font-size: 28px; 
-  color: #333;
+  font-size: 36px; 
   text-transform: uppercase; 
 }
 
 #beranda p {
-  font-size: 18px; 
-  color: #555;
+  font-size: 20px; 
   margin: 20px 0; 
-}
-
-#beranda.container {
-  max-width: 100%; 
 }
 
 #profil {
   background-color: #f8f9fa;
-  padding: 40px 0; 
+  padding: 80px 0;
 }
 
 #profil h2 {
-  font-size: 28px;
+  font-size: 36px;
   color: #333;
+  text-transform: uppercase;
 }
 
 #profil p {
-  font-size: 18px; 
+  font-size: 20px;
   color: #555;
   margin: 20px 0;
 }
 
 #profil.container {
+  max-width: 1000px;
+}
+
+#profil img {
   max-width: 100%;
 }
 
@@ -122,22 +134,16 @@
   .owl-carousel {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory; 
-    scroll-padding: 0 10px; 
-  }
-  
-  .owl-carousel .item {
-    width: 80%;
+}
+
+.owl-carousel .item {
+    width: 100%;
+    padding: 10px;
     margin-right: 20px;
-  }
-  
- 
-  .owl-carousel .item:last-child {
-    margin-right: 0;
-  }
+    transition: transform 0.3s ease-in-out;
+}
 
-
+/* Gaya tombol navigasi */
 .owl-nav {
     position: absolute;
     top: 50%;
@@ -171,70 +177,76 @@
     right: 10px;
 }
 
-
-  #kontak {
-  background-color: #f8f9fa;
-  padding: 40px 0;
+#kontak {
+  background-color: rgba(106, 107, 107, 0.404);
+  padding: 80px ;
 }
 
 #kontak h2 {
-  font-size: 28px; 
-  color: #333;
+  font-size: 26px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 #kontak p {
-  font-size: 18px;
-  color: #555;
-  margin: 10px 0;
+  font-size: 15px;
+  color: #fff;
+  margin: 10px;
 }
 
-#kontak.container {
+#kontak .container {
+  max-width: 1000px;
+}
+
+#kontak img {
   max-width: 100%;
 }
 
-  #kontak img {
-    max-width: 100%;
+.custom-footer {
+  background-color: #ffffff5d;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.custom-footer h6 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.custom-footer p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom-footer {
+    text-align: center;
   }
 
+  .custom-footer .container {
+    padding: 20px;
+  }
 
-  footer {
-    background-color: #f8f9fa; 
-    color: #343a40; 
-    text-align: center; 
-    padding: 20px 0; 
+  .custom-footer .col-md-6 {
+    margin-bottom: 20px;
   }
-  
-  .social-icons {
-    font-size: 24px;
-  }
-  
-  .social-icons a {
-    color: #343a40; 
-    text-decoration: none; 
-    margin: 0 10px; 
-  }
-  
-  .social-icons a:hover {
-    color: #484e53; 
-  }
-  
-  .nav {
-    list-style: none; 
-  }
-  
-  .nav-item {
-    display: inline; 
-    margin: 0 10px; 
-  }
-  
-  .nav-item a {
-    color: #343a40; 
-    text-decoration: none; 
-  }
-  
-  .nav-item a:hover {
-    color: #007bff; 
-  }
-  
+}
+.custom-footer .col-md-3 {
+  padding: 20px;
+  background-color: #f5f5f5; 
+  border: 15px solid #ffffff; 
+}
 
-  
+.custom-footer h6 {
+  font-size: 18px;
+  color: #000000;
+}
+
+.custom-footer p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6;
+}
+
