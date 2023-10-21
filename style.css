@@ -1,10 +1,15 @@
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
 .navbar {
   background: #000; 
 }
 
 .navbar-brand {
   color: #fff !important; 
-  font-size: 24px; 
+  font-size: 26px; 
   font-weight: bold; 
   text-decoration: none; 
 }
@@ -14,11 +19,11 @@
 }
 
 .navbar-nav .nav-item {
-  margin-right: 20px; 
+  margin-right: 5px; 
 }
 
 .navbar-nav .nav-link {
-  color: #fff !important; 
+  color: #fff ; 
   font-weight: bold; 
 }
 
@@ -32,8 +37,9 @@
 
 #beranda {
   background-color: rgba(0, 0, 0, 0.404);
-  color: #000000;
+  color: #ffffff;
   padding: 60px 0;
+  font-weight: bold;
 }
 
 #beranda h2 {
@@ -246,4 +252,45 @@
   .custom-footer .col-md-6 {
     margin-bottom: 20px;
   }
+} 
+
+/* Mengatur style section "pemesanan" */
+#pemesanan {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+/* Mengatur style judul "Pesan Kamar" */
+#pemesanan h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Mengatur style garis bawah untuk judul "Pesan Kamar" */
+.with-underline::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 3px solid #007BFF;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Mengatur style kolom input */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Mengatur style tombol "Pesan Kamar" */
+.btn-primary {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* Mengatur style teks di sebelah formulir */
+.col-md-6 p {
+  color: #666;
 }

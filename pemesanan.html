@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Hotel Sengku</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="gambar/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hotel Sengku</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<section id="pemesanan" class="p-5">
+    <div class="container">
+        <h2 class="display-4 text-center with-underline">Pesan Kamar</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="pesan-form" method="post" action="proses-pemesanan.php">
+                    <div class="form-group">
+                        <label for="nama">Nama Anda:</label>
+                        <input type="text" class="form-control" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Anda:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipe-kamar">Tipe Kamar:</label>
+                        <select class="form-control" id="tipe-kamar" name="tipe-kamar" required>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="superior">Superior Room</option>
+                            <option value="suite">Suite Room</option>
+                            <!-- Tambahkan pilihan lain sesuai dengan tipe kamar yang Anda miliki -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in">Check-in:</label>
+                        <input type="date" class="form-control" id="check-in" name="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Check-out:</label>
+                        <input type="date" class="form-control" id="check-out" name="check-out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jumlah">Jumlah Orang:</label>
+                        <input type="number" class="form-control" id="jumlah-dewasa" name="jumlah-dewasa" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pesan Kamar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Hotel Sengku adalah destinasi mewah di jantung kota Tokyo, Jepang, yang menawarkan pengalaman menginap yang tak terlupakan. Dengan komitmen kami untuk kenyamanan dan pelayanan terbaik, Hotel Sengku menjadikan kenyamanan dan kepuasan Anda sebagai prioritas utama.
+                </p>
+                <p>
+                    Kami bangga berada di lokasi strategis, dekat dengan pusat bisnis dan objek wisata terkenal, memudahkan akses ke semua yang Tokyo tawarkan. Lokasi kami yang berada di pusat kota juga memastikan bahwa Anda memiliki akses mudah ke toko-toko mewah, pusat perbelanjaan, dan atraksi budaya.
+                </p>
+                <p>
+                    Pelayanan tamu kami yang ramah dan profesional akan membuat Anda merasa di rumah jauh dari rumah. Staf kami yang berpengalaman selalu siap membantu Anda dalam setiap kebutuhan Anda, mulai dari check-in hingga check-out.
+                </p>
+                <p>
+                    Hotel Sengku menawarkan beragam fasilitas yang dirancang untuk memenuhi kebutuhan dan keinginan semua tamu. Mulai dari kamar yang elegan dan nyaman hingga restoran dengan hidangan lezat, kami menjamin pengalaman bintang lima yang tak tertandingi. Anda juga dapat bersantai di pusat kebugaran kami, bersantai di kolam renang, atau menjelajahi keindahan kota Tokyo dengan bantuan layanan wisata yang kami sediakan.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
