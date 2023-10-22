@@ -133,8 +133,9 @@ span{
 }
 
 #kamar {
-  background-color: #f8f9fa;
+  background-color: #555;
   padding: 60px 0;
+  color: #000000c7;
 }
 
 .card {
@@ -233,6 +234,12 @@ span{
 
 .owl-next {
   right: 10px;
+}
+
+#fasilitas {
+  background-color: #ffffff67;
+  padding: 60px 0;
+  color:#000000c4;
 }
 
 #kontak {
