@@ -6,9 +6,9 @@
     <title>Hotel Sengku</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="shortcut icon" href="gambar/logo.jpg">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
         <h2 class="display-4 text-center with-underline">Pesan Kamar</h2>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form id="pesan-form" method="post" action="proses-pemesanan.php">
+                <form id="pesan-form" method="post" action="proses_pemesanan.php">
                     <div class="form-group">
                         <label for="nama">Nama Anda:</label>
                         <input type="text" class="form-control" id="nama" name="nama" required>
@@ -47,8 +47,12 @@
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="form-group">
+                        <label for="number">Nomor Telepon:</label>
+                        <input type="number" class="form-control" id="nt" name="nt" required>
+                    </div>
+                    <div class="form-group">
                         <label for="tipe-kamar">Tipe Kamar:</label>
-                        <select class="form-control" id="tipe-kamar" name="tipe-kamar" required>
+                        <select class="form-control" id="tipe-kamar" name="kamar" required>
                             <option value="deluxe">Deluxe Room</option>
                             <option value="superior">Superior Room</option>
                             <option value="suite">Suite Room</option>
@@ -57,15 +61,28 @@
                     </div>
                     <div class="form-group">
                         <label for="check-in">Check-in:</label>
-                        <input type="date" class="form-control" id="check-in" name="check-in" required>
+                        <input type="date" class="form-control" id="tglci" name="tglci" required>
                     </div>
                     <div class="form-group">
                         <label for="check-out">Check-out:</label>
-                        <input type="date" class="form-control" id="check-out" name="check-out" required>
+                        <input type="date" class="form-control" id="tglco" name="tglco" required>
                     </div>
                     <div class="form-group">
                         <label for="jumlah">Jumlah Orang:</label>
-                        <input type="number" class="form-control" id="jumlah-dewasa" name="jumlah-dewasa" min="1" required>
+                        <input type="number" class="form-control" id="jo" name="jo" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jumlah">Jumlah Kamar:</label>
+                        <input type="number" class="form-control" id="jk" name="jk" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="metode_pembayaran">Metode Pembayaran:</label>
+                        <select class="form-control" id="metode_pembayaran" name="metode_pembayaran" required>
+                            <option value="Cash">Cash</option>
+                            <option value="Transfer">Transfer</option>
+                            <option value="Debit">Debit</option>
+                            <option value="QR">QR</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Pesan Kamar</button>
                 </form>
